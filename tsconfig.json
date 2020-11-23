@@ -1,29 +1,33 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react",
-    "sourceMap": true,
-    "target": "es5",
+		"noUnusedLocals": true,
+		"sourceMap": true,
     "experimentalDecorators": true,
-    "declaration": false,
     "removeComments": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "build",
+		"noImplicitReturns": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+		"baseUrl": "src",
+		"target": "es5",
+		"module": "esnext",
     "lib": [
       "es6",
       "es7",
       "dom"
     ],
-    "baseUrl": "src",
-    "allowSyntheticDefaultImports": true,
-  },
+		"allowSyntheticDefaultImports": true,
+		"outDir": "dist",
+		"declaration": true
+	},
+	"include": ["src/**/*"],
+	"exclude": [
+    "node_modules",
+		"dist"
+  ]
 }
